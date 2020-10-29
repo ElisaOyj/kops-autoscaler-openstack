@@ -45,7 +45,7 @@ func Execute() {
 		},
 	}
 
-	rootCmd.Flags().IntVar(&options.Sleep, "sleep", 45, "Sleep between executions")
+	rootCmd.Flags().IntVar(&options.Sleep, "sleep", 300, "Sleep between executions")
 	rootCmd.Flags().StringVar(&options.StateStore, "state-store", os.Getenv("KOPS_STATE_STORE"), "KOPS State store")
 	rootCmd.Flags().StringVar(&options.AccessKey, "access-id", os.Getenv("S3_ACCESS_KEY_ID"), "S3 access key")
 	rootCmd.Flags().StringVar(&options.SecretKey, "secret-key", os.Getenv("S3_SECRET_ACCESS_KEY"), "S3 secret key")
